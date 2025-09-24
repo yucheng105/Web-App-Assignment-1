@@ -3,6 +3,7 @@ body    {
     padding: 0
 }
 
+/*all div*/
 div {
     margin: 0;
     padding: 10px 0px;
@@ -10,18 +11,55 @@ div {
     background-color: black;
 }
 
-
-
+/*all links*/
 a {
     color: white;
     padding: 15px 16px;
     text-decoration:none;
     background-color: none;
+
+}
+
+/*mouse hover*/
+a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/*hamburger Menu div*/
+.hamMenu    {
+    text-align:right;
+    display: none;
 }
 
 
 
-a:hover {
-    color: black;
-    background-color: white;
+/*rwd*/
+
+@media only screen and (max-width: 480px)   {
+    div {
+        padding: 0;
+    }
+    
+    a   {
+        padding: 8px;
+        display: block;
+    }
+    
+    
+    .navbar {
+        display: none;
+    }
+    
+    .hamMenu    {
+        display: block;
+        padding: 6px 0px;
+    }
+    
+    .expand {
+        padding: 10px;
+        display: inline;
+    }
+    
 }
